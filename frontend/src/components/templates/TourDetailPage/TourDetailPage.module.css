@@ -1,0 +1,181 @@
+.container {
+  background-color: var(--color--white);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 70px auto;
+  box-shadow: 0 2px 10px #00000033;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.right img {
+  width: 397px;
+  height: 265px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.left {
+  flex: 1;
+}
+.left p{
+  font-size: 1.3rem;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.intro {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 25px;
+}
+
+.introItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-subtext);
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.introItem p {
+  font-size: 1.1rem;
+}
+
+.priceBox {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.price p{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.price span {
+  color: var(--color-complementary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.reserveBtn {
+  background-color: var(--color-primary);
+  color: var(--color--white);
+  border: none;
+  padding: 8px 40px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.reserveBtn:hover {
+  background-color: var(--color-hover-btn);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-top: 25px;
+  padding-top: 20px;
+  gap: 15px;
+  text-align: center;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border-left: 1px solid var(--color-border);
+}
+.infoItem:last-of-type {
+  border-left: none;
+}
+
+.infoTitle {
+  display: flex;
+  gap: 10px;
+}
+
+.infoTitle p {
+  font-size: 1.1rem;
+}
+
+.infoTitleHeader {
+  color: var(--color-subtext);
+  font-size: 14px;
+}
+
+.infoSubTitle {
+  color: var(--color--black);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin: 70px 20px;
+  }
+
+  .reserveBtn {
+    padding: 10px 50px;
+  }
+
+  .right img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 20px;
+  }
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .title {
+    margin-bottom: 0;
+    font-size: 1.7rem;
+  }
+  .info {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 30px;
+  }
+  .infoItem {
+    border-left: none;
+  }
+
+  .right img {
+    width: 100%;
+  }
+
+  .introItem p {
+    font-size: 0.8rem;
+  }
+
+  .priceBox {
+    margin: 50px 10px 10px;
+  }
+  .reserveBtn {
+    padding: 6px 20px;
+  }
+  .price span {
+    font-size: 1.6rem;
+  }
+}

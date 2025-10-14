@@ -1,0 +1,15 @@
+.homeContainer {
+    min-height: 100vw;
+  }
+  
+  @media (max-width: 900px) {
+    .homeContainer {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .homeContainer {
+      padding: 0;
+    }
+  }

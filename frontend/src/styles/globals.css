@@ -1,0 +1,54 @@
+:root {
+  --color-primary: #28a745;
+  --color-secondary: #10411b;
+  --color-complementary: #009eca;
+  --color-primary-disabled: #a5d6a7;
+  --color-text: #282828;
+  --color-subtext: #666666;
+  --color-hover: #f7f7f7;
+  --color-hover-btn: #176929;
+  --color-border: #e5e5e5;
+  --color-border-black: #00000033;
+  --color--black: #000000;
+  --color--white: #fff;
+  --color-error: #f54927;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "YekanBakh";
+  max-width: 1440px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+button,
+select,
+option,
+input {
+  font-family: inherit;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .Toastify__toast-container {
+    max-width: 90%;
+  }
+
+  .Toastify__toast {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

@@ -1,45 +1,8 @@
 [
   {
-    "id": "8f5d2f9d-e1ab-4877-b0f1-a59dc50b12ae",
-    "mobile": "09170567571",
-    "otpExpires": 1759595168583,
-    "otpCode": "812851"
-  },
-  {
-    "id": "ccc40052-f404-43c0-909b-a7c0096860a4",
-    "mobile": "0988888888",
-    "otpExpires": 1759841892190,
-    "otpCode": "503670",
-    "email": "example@gmail.com",
-    "firstName": "John",
-    "lastName": "Doe",
-    "nationalCode": 3730798568,
-    "birthDate": "2022-10-02",
-    "gender": "male",
-    "payment": {
-      "shaba_code": "string",
-      "debitCard_code": "string",
-      "accountIdentifier": "string"
-    },
-    "phone": ""
-  },
-  {
-    "id": "d1732e30-37c9-4791-8842-c818036c6be7",
-    "mobile": "09124055587",
-    "otpExpires": 1759707649788,
-    "otpCode": "109255",
-    "firstName": "محمد",
-    "lastName": "",
-    "nationalCode": "",
-    "birthDate": "",
-    "gender": "",
-    "email": "asasf@gmail.com"
-  },
-  {
-    "id": "5aa6476f-b76b-4695-89f0-7d203d96b3e9",
+    "id": "f0b9373f-eb4b-4ff8-b743-c98b5a224195",
     "mobile": "09194060210",
-    "otpExpires": 1760031127226,
-    "otpCode": "324970",
-    "email": ""
+    "otpExpires": 1761212540469,
+    "otpCode": "870852"
   }
 ]

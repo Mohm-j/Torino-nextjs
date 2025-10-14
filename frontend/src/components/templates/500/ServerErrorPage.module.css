@@ -1,0 +1,45 @@
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 100px;
+}
+
+.errorRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.notfoundRight h1 {
+  font-size: 2.1rem;
+}
+
+.errorRight p {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 16px;
+}
+
+@media (max-width: 900px) {
+  .errorContainer {
+    flex-direction: column-reverse;
+    margin-top: 0;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .errorContainer img {
+    width: 400px;
+  }
+  .errorRight h1 {
+    font-size: 1.5rem;
+  }
+  .errorRight p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}

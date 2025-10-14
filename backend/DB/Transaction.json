@@ -1,65 +1,9 @@
 [
   {
-    "id": "a85a21c8-79e1-4e5d-a3eb-f4a85adabd82",
-    "userId": "ccc40052-f404-43c0-909b-a7c0096860a4",
+    "id": "71fae7f4-496e-4605-862e-cb1abc0f6c8d",
+    "userId": "f0b9373f-eb4b-4ff8-b743-c98b5a224195",
     "amount": 240000,
     "type": "Purchase",
-    "createdAt": "2025-10-06T12:31:09.633Z"
-  },
-  {
-    "id": "a68ef087-5c0d-40de-a61b-addb4668fcb4",
-    "userId": "ccc40052-f404-43c0-909b-a7c0096860a4",
-    "amount": 18000,
-    "type": "Purchase",
-    "createdAt": "2025-10-06T15:28:40.045Z"
-  },
-  {
-    "id": "ed00a7b3-5fe4-48f4-b2f6-96de18967105",
-    "userId": "ccc40052-f404-43c0-909b-a7c0096860a4",
-    "amount": 105000,
-    "type": "Purchase",
-    "createdAt": "2025-10-06T15:29:32.006Z"
-  },
-  {
-    "id": "380bace2-9565-48cf-a421-fd58e69e5621",
-    "userId": "ccc40052-f404-43c0-909b-a7c0096860a4",
-    "amount": 105000,
-    "type": "Purchase",
-    "createdAt": "2025-10-06T15:32:56.490Z"
-  },
-  {
-    "id": "e1e06983-5b1a-43e6-aba3-d8ff40320aaf",
-    "userId": "5aa6476f-b76b-4695-89f0-7d203d96b3e9",
-    "amount": 105000,
-    "type": "Purchase",
-    "createdAt": "2025-10-07T13:56:23.399Z"
-  },
-  {
-    "id": "fa8ead72-9b02-4cc1-99ec-00623e6b0ee4",
-    "userId": "5aa6476f-b76b-4695-89f0-7d203d96b3e9",
-    "amount": 35000,
-    "type": "Purchase",
-    "createdAt": "2025-10-08T13:07:32.333Z"
-  },
-  {
-    "id": "b5b2d8f8-12a6-4e78-9e18-fb33b91b52d3",
-    "userId": "5aa6476f-b76b-4695-89f0-7d203d96b3e9",
-    "amount": 35000,
-    "type": "Purchase",
-    "createdAt": "2025-10-08T13:08:30.294Z"
-  },
-  {
-    "id": "8f6553c2-2755-498c-980a-6e01a632f7db",
-    "userId": "5aa6476f-b76b-4695-89f0-7d203d96b3e9",
-    "amount": 18000,
-    "type": "Purchase",
-    "createdAt": "2025-10-08T16:22:34.101Z"
-  },
-  {
-    "id": "26f92bb6-5d01-4fa6-be6d-a848c6f2386a",
-    "userId": "5aa6476f-b76b-4695-89f0-7d203d96b3e9",
-    "amount": 105000,
-    "type": "Purchase",
-    "createdAt": "2025-10-09T17:24:20.814Z"
+    "createdAt": "2025-10-23T09:32:43.299Z"
   }
 ]

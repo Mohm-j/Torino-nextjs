@@ -1,0 +1,161 @@
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  border-radius: 10px;
+  border: 1px solid var(--color-border-black);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cardHeader h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.editBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  color: var(--color-complementary);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.editBtn:hover {
+  text-decoration: underline;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.infoGrid span {
+  font-size: 0.85rem;
+  color: var(--color-subtext);
+}
+
+.infoGrid p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.formGrid input,
+.formGrid select {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--color-border-black);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.formGrid input:focus,
+.formGrid select:focus,
+.infoGrid input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-secondary);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.saveBtn {
+  background: var(--color-primary);
+  color: var(--color--white);
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.6rem 2.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.saveBtn:hover {
+  background: var(--color-hover-btn);
+}
+
+.cancelBtn {
+  border: 2px solid var(--color-primary);
+  background: transparent;
+  color: var(--color-primary);
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.6rem 2.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.cancelBtn:hover {
+  background-color: var(--color-primary);
+  color: var(--color--white);
+}
+
+.error {
+  color: var(--color-error);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.editableInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border-black);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.dateInputWrapper {
+  position: relative;
+}
+
+.placeholder {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-subtext) !important;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+.gender select {
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--color-subtext);
+}
+
+@media (max-width: 480px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+  .actions {
+    justify-content: space-between;
+  }
+}

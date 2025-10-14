@@ -1,0 +1,113 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modalCloseBtn,
+.modalBackBtn {
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  text-align: right;
+  margin-bottom: 10px;
+
+}
+
+.input {
+  padding: 0.6rem;
+  border: 1px solid #00000040;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.error {
+  font-size: 0.75rem;
+  color: var(--color-error);
+  text-align: right;
+}
+
+.submitBtn {
+  background-color: var(--color-primary);
+  color: var(--color--white);
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submitBtn:disabled {
+  background: var(--color-primary-disabled);
+  cursor: not-allowed;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background-color: var(--color-hover-btn);
+}
+
+.otpWrapper {
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+}
+
+.otpInput {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  margin: 0 0.25rem;
+  font-size: 1.25rem;
+  border-radius: 6px;
+  border: 1px solid #00000040;
+}
+
+.resendWrapper {
+  margin-top: 5px;
+  font-size: 0.75rem;
+}
+
+.resendWrapper p {
+  color: var(--color-subtext);
+}
+
+.resendWrapper span {
+  font-weight: 600;
+  margin-right: 2px;
+  color: var(--color-primary);
+}
+
+.resendBtn {
+  margin-top: 5px;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.resendBtn:hover:not(:disabled) {
+  background-color: var(--color-primary);
+  color: var(--color--white);
+}
+

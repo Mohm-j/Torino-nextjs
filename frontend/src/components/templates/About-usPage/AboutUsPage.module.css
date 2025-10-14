@@ -1,0 +1,26 @@
+.container {
+  max-width: 1000px;
+  margin-inline: auto;
+  margin-top: 50px;
+}
+.text h1 {
+  margin-bottom: 30px;
+  color: var(--color-primary);
+}
+
+.text p {
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2.5;
+}
+.boldText {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 50px;
+  }
+}

@@ -15,8 +15,5 @@
   "devDependencies": {
     "concurrently": "^9.2.1",
     "nodemon": "^3.1.10"
-  },
-  "dependencies": {
-    "zaman": "^2.1.1"
   }
 }

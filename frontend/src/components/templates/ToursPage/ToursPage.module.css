@@ -1,0 +1,35 @@
+.listContainer {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 110vh;
+  margin-bottom: 150px;
+}
+.listHeader {
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.subListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.subListContainer_text {
+  margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+  .listContainer {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  .listHeader {
+    font-size: 1.5rem;
+  }
+  .subListContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

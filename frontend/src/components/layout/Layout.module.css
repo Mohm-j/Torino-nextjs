@@ -1,0 +1,300 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 4%;
+  align-items: center;
+  text-align: center;
+}
+.headerMobile {
+  display: none;
+}
+
+.loginBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  gap: 8px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.headerMiddle ul {
+  display: flex;
+  gap: 40px;
+  font-weight: 500;
+}
+.headerMiddle ul li:hover {
+  color: var(--color-primary);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.mobileMenu {
+  background: var(--color--white);
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  padding: 20px 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: right 0.3s ease-in-out;
+}
+
+.mobileMenu.open {
+  right: 0;
+}
+
+.mobileMenu ul li {
+  padding: 20px 30px;
+  display: flex;
+  gap: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.mobileMenu ul li:hover {
+  color: var(--color-primary);
+}
+
+.mobileMenu ul li img {
+  width: 22px;
+}
+.headerMiddle__active {
+  color: var(--color-primary);
+}
+
+.userMenu {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.userMenu:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.userTrigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--color-primary);
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.userTrigger:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.userTrigger__number {
+  font-size: 1.2rem;
+  transform: translateY(1px);
+}
+
+.dropdown {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  background: var(--color--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 100;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  color: var(--color--black);
+}
+
+.dropdownItem:hover {
+  background: var(--color-hover);
+}
+
+.dropdownItemLogout {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  color: var(--color-error);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-top: 1px solid var(--color-border);
+}
+
+.dropdownItemLogout:hover {
+  background: var(--color-hover);
+}
+.dropdownProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.dropdownProfile span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.btn {
+  color: var(--color--black);
+}
+.btn:hover {
+  color: var(--color-primary);
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 0;
+  text-align: right;
+  gap: 20px;
+}
+
+.footerRight ul li,
+.footerMiddle ul li {
+  padding-top: 8px;
+}
+.footerRight ul li a {
+  color: #000;
+}
+.footerRight ul li:hover,
+.footerMiddle ul li:hover,
+.footerRight ul li a:hover {
+  color: var(--color-primary);
+}
+
+.footerRight h3,
+.footerMiddle h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.footerLeft {
+  text-align: center;
+}
+.footerLeft p {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.imageContainer {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footerImage {
+  width: 50px;
+  margin-top: 20px;
+}
+
+.footerContainer h4 {
+  text-align: center;
+  margin: 20px;
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .headerMiddle ul {
+    gap: 20px;
+  }
+  .footerLeft {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 20px 10%;
+    box-shadow: 0px 1px 4px 0px #00000040;
+  }
+  .headerLeft,
+  .headerMiddle,
+  .headerLogo {
+    display: none;
+  }
+  .headerMobile {
+    display: block;
+  }
+  .line {
+    display: none;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "right middle"
+      "left left";
+  }
+
+  .footerLeft {
+    display: flex;
+    flex-direction: row-reverse;
+    grid-area: left;
+    margin-top: 20px;
+    gap: 70px;
+    align-items: center;
+    text-align: center;
+  }
+  .footerLeft p {
+    margin-top: 10px;
+  }
+  .footerImage {
+    width: 40px;
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+  .footerContainer h4 {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 400px) {
+  .footerLeft {
+    gap: 60px;
+  }
+  .footerLogo {
+    width: 100px;
+  }
+}

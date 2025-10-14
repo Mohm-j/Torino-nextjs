@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  margin: auto;
+  text-align: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 320px;
+  margin-bottom: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.counter {
+  font-weight: bold;
+  
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    width: 100%;
+  }
+  .image {
+    width: 80%;
+    height: 80%;
+  }
+}

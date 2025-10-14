@@ -1,0 +1,40 @@
+.contactContainer {
+  max-width: 1200px;
+  margin-top: 150px;
+  margin-right: 80px;
+  margin-inline: auto;
+}
+
+.contactContainer__image {
+  width: 100%;
+  height: auto;
+}
+.contactContainer__mobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .contactContainer {
+    padding: 30px;
+    margin-top: 50px;
+    gap: 100px;
+  }
+  .contactContainer__mobile {
+    display: block;
+  }
+  .contactContainer__image {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .contactContainer {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .contactContainer {
+    margin-right: 0;
+  }
+}
