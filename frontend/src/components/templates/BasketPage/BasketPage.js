@@ -62,7 +62,11 @@ const BasketPage = () => {
       });
       toast.success("سفارش با موفقیت ثبت شد");
       reset();
-      router.replace("/");
+         router.push("/").then(() => {
+        if (process.env.NODE_ENV === "development") {
+          router.reload();
+        }
+      });
     } catch (error) {
       toast.error(error.response?.data?.message || "خطا در ثبت سفارش، لطفاً دوباره تلاش کنید");
     }
