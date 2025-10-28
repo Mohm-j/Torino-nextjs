@@ -199,7 +199,7 @@ npm start
 Create a `.env.local` file in the `frontend/` directory:
 
 ```bash
-NEXT_PUBLIC_BASE_URL=https://your-backend-api.com
+NEXT_PUBLIC_BASE_URL=http://localhost:6500
 ```
 
 ---
